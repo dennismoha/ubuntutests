@@ -1,4 +1,18 @@
 <%- include('./partials/header.ejs'); %>
-    <h1>this is the contacts page</h1>
+    <div class="container">
+        <form action="/users/post" method="POST">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter your details</label>
+                <textarea class="form-control" name="details" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+    </div>
 
     <%- include('./partials/footer.ejs'); %>
